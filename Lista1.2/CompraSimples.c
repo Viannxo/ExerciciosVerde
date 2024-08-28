@@ -11,14 +11,14 @@ o valor unitário de cada peça 1, o código de uma peça 2, o número de peças
 #include <stdio.h>
 
 int main() {
-    int codPeça1, codPeça2, qtd1, qtd2;
+    int codPeca1, codPeca2, qtd1, qtd2;
     float valor1, valor2, total;
 
     // Leitura dos dados da peça 1
-    scanf("%d %d %f", &codPeça1, &qtd1, &valor1);
+    scanf("%d %d %f", &codPeca1, &qtd1, &valor1);
 
     // Leitura dos dados da peça 2
-    scanf("%d %d %f", &codPeça2, &qtd2, &valor2);
+    scanf("%d %d %f", &codPeca2, &qtd2, &valor2);
 
     // Calcula o valor total a pagar
     total = (qtd1 * valor1) + (qtd2 * valor2);
