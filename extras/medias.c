@@ -13,7 +13,7 @@ int main(){
         printf("%f", media);
     }
     if((ops=='g')||(ops=='G')){
-        media= sqrt(n1=n2=n3);
+        media= cbrt(n1*n2*n3);
         printf("%f", media);
     }
     if((ops=='h')||(ops=='H')){
@@ -21,7 +21,7 @@ int main(){
         printf("%f", media);
     }
     if((ops=='p')||(ops=='P')){
-        media= (n1*2*n2+3*n3)/2;
+        media= (n1+2*n2+3*n3)/2;
         printf("%f", media);
     }
 }
