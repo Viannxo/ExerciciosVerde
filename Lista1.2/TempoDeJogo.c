@@ -1,13 +1,13 @@
 /*
-Leia a hora inicial e a hora final de um jogo. A seguir calcule a duração do jogo,
-sabendo que o mesmo pode começar em um dia e terminar em outro, tendo uma duração mínima
-de 1 hora e máxima de 24 horas.
+Leia a hora inicial e a hora final de um jogo. A seguir calcule a duraï¿½ï¿½o do jogo,
+sabendo que o mesmo pode comeï¿½ar em um dia e terminar em outro, tendo uma duraï¿½ï¿½o mï¿½nima
+de 1 hora e mï¿½xima de 24 horas.
 
 Entrada
-A entrada contém dois valores inteiros representando a hora de início e a hora de fim do jogo.
+A entrada contï¿½m dois valores inteiros representando a hora de inï¿½cio e a hora de fim do jogo.
 
-Saída
-Apresente a duração do jogo conforme exemplo abaixo.
+Saï¿½da
+Apresente a duraï¿½ï¿½o do jogo conforme exemplo abaixo.
 */
 
 #include <stdio.h>
@@ -23,7 +23,7 @@ int main (){
     } else if(tInicio<tFinal){
         tempoJogo=tFinal-tInicio;
         printf("O JOGO DUROU %d HORA(S)", tempoJogo);
-    }else(tInicio==tFinal);{
+    }else if(tInicio==tFinal){
         printf("O JOGO DUROU 24 HORA(S)");
     }
 
