@@ -4,6 +4,7 @@ float mediaH(int n);
 float mediaAri(int, int, int);
 float mediaGeo (int, int, int);
 float mediaPon(int);
+float SomaPon(int);
 
 void menu(){
     printf ("Programa para calcular media: \n");
@@ -61,7 +62,7 @@ int main () {
             printf ("digite valor de n:\n");
             scanf("%d", &n);
             float result = mediaPon(n);
-            printf("A media ponderada e: %.2f\n", result);
+            printf("Média Ponderada: %f\n", result);
 
             break;
         case'S':
@@ -105,25 +106,21 @@ float mediaGeo(int n1, int n2, int n3){
 }
 
 float mediaPon(int n) {
-    float soma = 0.0;
-    float somaPesos = 0.0;
-    SomaPond(n, &soma, &somaPesos);
-    if (somaPesos == 0) {
-        return 0;
+    float somaPesos = 0;
+    float sum = SomaPon(n);
+    float mediaPonde;
+
+    for(int i = 1; i <= n; i++){
+        somaPesos= somaPesos + i;
     }
-    return soma / somaPesos;
+    float mediaPon=(sum/somaPesos);
+    return mediaPon;
 }
 
-void SomaPond(int n, float *soma, float *somaPesos){
-    if (n <= 0) {
-        return;
+float SomaPon(int n) {
+    float soma = 0;
+    for(int i = 1; i <= n; i++) {
+        soma += i * (n - i + 1);
     }
-    float valor, peso;
-    printf("Digite o valor %d: ", n);
-    scanf("%f", &valor);
-    printf("Digite o peso do valor %d: ", n);
-    scanf("%f", &peso);
-    *soma += valor * peso;
-    *somaPesos += peso;
-    SomaPond(n - 1, soma, somaPesos);
+    return soma;
 }
