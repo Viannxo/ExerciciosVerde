@@ -1,0 +1,24 @@
+// Escreva um algoritmo que encontre e mostre o maior e o menor número negativo
+// dentre todos aqueles fornecidos pelo usuário. Sabe-se que o usuário fornece
+// 100 números e que nenhum ultrapassa o valor -1000
+
+#include <stdio.h>
+
+int main(){
+    int n, maior= -1000, menor= -1;
+    printf("Digite um valor negativo que seja ou esteja entre -1000 e -1: \n para sair do programa digite 1");
+    if(n==1){
+        return 0;
+    }
+    for(int i=0;i<=99;i++){
+        scanf("%d%*c", &n);
+        if(n < menor){
+            menor=n;
+        }
+        if(n > maior){
+            maior=n;
+        }
+    }
+    printf("Maior: %d Menor: %d", maior,menor);
+    return 0;     
+}

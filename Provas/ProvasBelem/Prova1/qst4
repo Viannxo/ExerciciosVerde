@@ -1,0 +1,19 @@
+// Escreva um algoritmo que imprima um tabuleiro quadrado de xadrez cujo tamanho do lado é lido
+// pelo usuário. Para os quadrados preenchidos, imprima o caractere * e, para os quadrados brancos, imprima
+// o espaço em branco. Sabe-se que um tabuleiro sempre inicia com um quadrado branco.
+
+
+
+//terminar depois
+#include <stdio.h>
+
+int main(){
+    int lado;
+    printf("digite valor do lado do tabuleiro: \n");
+    scanf("%d", lado);
+    for(int i=0; i < lado;i++){
+        for(int j=0;j < lado; j++){
+            if 
+        }
+    }   
+}

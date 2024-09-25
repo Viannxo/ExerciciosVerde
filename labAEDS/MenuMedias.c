@@ -108,7 +108,6 @@ float mediaGeo(int n1, int n2, int n3){
 float mediaPon(int n) {
     float somaPesos = 0;
     float sum = SomaPon(n);
-    float mediaPonde;
 
     for(int i = 1; i <= n; i++){
         somaPesos= somaPesos + i;
