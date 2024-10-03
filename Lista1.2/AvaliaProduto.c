@@ -27,32 +27,24 @@ int main() {
     int gostou;
 
     int totalMasculino = 0, totalFeminino = 0;
-    int idadeMaisVelhoMasculino = -1; // -1 indica que ainda não foi encontrado
-    int idadeMaisNovoFeminino = 101;  // 101 para considerar a idade máxima
+    int idadeMaisVelhoMasculino = -1;
+    int idadeMaisNovoFeminino = 101;
     int totalClientes = 0;
     int totalNaoGostaram = 0;
 
     while (1) {
-        // Lê a idade
         scanf("%d", &idade);
         if (idade < 0) {
-            break; // Encerra se a idade for negativa
+            break;
         }
-
-        // Lê o gênero
         scanf(" %c", &genero);
-
-        // Lê se gostou ou não
         scanf("%d", &gostou);
-
-        totalClientes++; // Contagem total de clientes
-
-        // Verifica se gostou
+        totalClientes++;
         if (gostou == 1) {
             if (genero == 'M') {
                 totalMasculino++;
                 if (idadeMaisVelhoMasculino == -1 || idade > idadeMaisVelhoMasculino) {
-                    idadeMaisVelhoMasculino = idade; // Atualiza a idade mais velha masculina
+                    idadeMaisVelhoMasculino = idade;
                 }
             } else if (genero == 'F') {
                 totalFeminino++;
@@ -60,17 +52,15 @@ int main() {
         } else {
             if (genero == 'F') {
                 if (idade < idadeMaisNovoFeminino) {
-                    idadeMaisNovoFeminino = idade; // Atualiza a idade mais nova feminina
+                    idadeMaisNovoFeminino = idade;
                 }
             }
-            totalNaoGostaram++; // Contagem de pessoas que não gostaram
+            totalNaoGostaram++;
         }
     }
 
-    // Cálculo do percentual de pessoas que não gostaram
     float percentualNaoGostaram = (totalClientes > 0) ? ((float)totalNaoGostaram / totalClientes) * 100 : 0;
 
-    // Saídas
     printf("Masculino: %d\n", totalMasculino);
     printf("Feminino: %d\n", totalFeminino);
     printf("%d anos\n", idadeMaisVelhoMasculino == -1 ? 0 : idadeMaisVelhoMasculino);
