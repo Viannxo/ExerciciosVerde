@@ -6,7 +6,6 @@ Saída: 1 linha exibindo o correspondente em binário
 
 
 Exemplo: Entrada 5 implica em saída 101.*/
-
 #include <stdio.h>
 void imprimeBinario(int n);
 int main() {
@@ -20,7 +19,5 @@ void imprimeBinario (int n){
     if(n>0){
         imprimeBinario(n/2);
         printf("%d", n%2);
-    }else{
-        printf("0");
     }
 }
