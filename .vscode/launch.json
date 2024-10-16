@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/1508022/Documents/GitHub/ExerciciosVerde/Lista2",
-      "program": "c:/Users/1508022/Documents/GitHub/ExerciciosVerde/Lista2/build/Debug/outDebug",
+      "cwd": "c:/Users/1508022/Documents/GitHub/ExerciciosVerde/labAEDS/ProjetoPonteiro",
+      "program": "c:/Users/1508022/Documents/GitHub/ExerciciosVerde/labAEDS/ProjetoPonteiro/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
