@@ -57,6 +57,11 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
-    "qst2": "c"
+    ".env.*": "dotenv",
+    ".prettierrc": "json",
+    "*.css": "css",
+    "qst2": "c",
+    "pont1": "cpp",
+    "structponteiro": "cpp"
   }
 }
