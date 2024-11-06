@@ -11,11 +11,11 @@ void lerMatriz(int n, int m, int mat[n][m]) {
 int SumBordExt(int n, int m, int mat[n][m]) {
     int soma = 0;
 
-    for (int j = 0; j < m; j++) {
+    for (int j = 0; j < m; j++){
         soma += mat[0][j];       
         soma += mat[n-1][j];     
     }
-    for (int i = 1; i < n-1; i++) {  
+    for (int i = 1; i < n-1; i++){  
         soma += mat[i][0];        
         soma += mat[i][m-1];      
     }
