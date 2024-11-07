@@ -3,7 +3,7 @@
 void lerMatriz(int n, int m, int mat[n][m]) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
-            scanf("%d", mat[i][j]);
+            scanf("%d", &mat[i][j]);
         }
     }
 }
@@ -25,11 +25,11 @@ int SumBordExt(int n, int m, int mat[n][m]) {
 
 int main() {
     int n, m, sumBord;
-    printf("Digite o numero de linhas e colunas: ");
+    //printf("Digite o numero de linhas e colunas: ");
     scanf("%d %d", &n, &m);
     int Mat[n][m];  
     lerMatriz(n, m, Mat);
     sumBord = SumBordExt(n, m, Mat);
-    printf("Soma das bordas: %d\n", sumBord);
+    printf("%d\n", sumBord);
     return 0;
 }
