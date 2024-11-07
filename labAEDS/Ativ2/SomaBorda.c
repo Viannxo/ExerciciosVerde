@@ -19,7 +19,6 @@ int SumBordExt(int n, int m, int mat[n][m]) {
         soma += mat[i][0];        
         soma += mat[i][m-1];      
     }
-
     return soma;
 }
 
