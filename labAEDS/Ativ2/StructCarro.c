@@ -48,7 +48,7 @@ Carro CadastroCarros(int n, Carro car[]){
     car[n];
     for(int i=0;i<n;i++){
         printf("Digite a marca do carro:\n");
-        scanf("%s", car[i].marca);
+        fgets(car[i].marca, 20, stdin);
         printf("Digite o ano do carro:\n");
         scanf("%d", &car[i].ano);
         printf("Digite o preco do carro:\n");
