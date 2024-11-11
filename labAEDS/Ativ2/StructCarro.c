@@ -45,7 +45,7 @@ typedef struct carro{
     float preco;
 }Carro;
 
-Carro CadastroCarros(int n, Carro *car){
+Carro CadastroCarros(int n, Carro car){
     Carro car[n];
     for(int i=0;i<n;i++){
         printf("Digite a marca do carro:\n");
@@ -62,7 +62,7 @@ int main(){
     printf("Digite o numero de carros:\n");
     scanf("%d", &n);
     Carro carros[n];
-    carros[n] = CadastroCarros(n, *carros);
+    carros[n] = CadastroCarros(n, carros[]);
     float precoMax;
     printf("Digite o preco maximo:\n");
     scanf("%f", &precoMax);
