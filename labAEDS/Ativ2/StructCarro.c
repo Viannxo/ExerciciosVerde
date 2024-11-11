@@ -38,15 +38,15 @@ Marca: Honda, Ano: 2021, Preço: 28000.00
 
 #include <stdio.h>
 #include <stdlib.h>
-typedef struct carro{
+
+typedef struct carro {
     char marca[20];
     int ano;
     float preco;
-}Carro;
+} Carro;
 
-Carro CadastroCarros(int n, Carro car[]){
-    car[n];
-    for(int i=0;i<n;i++){
+void CadastroCarros(int n, Carro car[]) {
+    for (int i = 0; i < n; i++) {
         printf("Digite a marca do carro:\n");
         scanf("%s", car[i].marca);
         printf("Digite o ano do carro:\n");
@@ -54,20 +54,26 @@ Carro CadastroCarros(int n, Carro car[]){
         printf("Digite o preco do carro:\n");
         scanf("%f", &car[i].preco);
     }
-    return car[n];
 }
-int main(){
+
+int main() {
     int n;
     printf("Digite o numero de carros:\n");
     scanf("%d", &n);
-    Carro carros[ n ];
-    carros[n] = CadastroCarros(n, *carros);
+    Carro carros[n];
+    
+    CadastroCarros(n, carros);
+
     float precoMax;
     printf("Digite o preco maximo:\n");
     scanf("%f", &precoMax);
-    for(int i=0;i<n;i++){
-        if(carros[i].preco < precoMax){
+
+    printf("Carros com preco menor que %.2f:\n", precoMax);
+    for (int i = 0; i < n; i++) {
+        if (carros[i].preco < precoMax) {
             printf("Marca: %s, Ano: %d, Preco: %.2f\n", carros[i].marca, carros[i].ano, carros[i].preco);
         }
     }
-}   
+
+    return 0;
+}
