@@ -46,28 +46,29 @@ typedef struct carro{
 }Carro;
 
 Carro CadastroCarros(int n){
-    Carro carro[n];
+    Carro carros[n];
     for(int i=0;i<n;i++){
         printf("Digite a marca do carro:\n");
-        scanf("%s", carro[i].marca);
+        scanf("%s", carros[i].marca);
         printf("Digite o ano do carro:\n");
-        scanf("%d", &carro[i].ano);
+        scanf("%d", &carros[i].ano);
         printf("Digite o preco do carro:\n");
-        scanf("%f", &carro[i].preco);
+        scanf("%f", &carros[i].preco);
     }
+    return carros;
 }
 int main(){
     int n;
     printf("Digite o numero de carros:\n");
     scanf("%d", &n);
-    Carro carro[n];
-    carro = CadastroCarros(n);
+    Carro carros[n];
+    carros = CadastroCarros(n);
     float precoMax;
     printf("Digite o preco maximo:\n");
     scanf("%f", &precoMax);
     for(int i=0;i<n;i++){
-        if(carro[i].preco < precoMax){
-            printf("Marca: %s, Ano: %d, Preco: %.2f\n", carro[i].marca, carro[i].ano, carro[i].preco);
+        if(carros[i].preco < precoMax){
+            printf("Marca: %s, Ano: %d, Preco: %.2f\n", carros[i].marca, carros[i].ano, carros[i].preco);
         }
     }
 }   
