@@ -61,7 +61,7 @@ int main(){
     int n;
     printf("Digite o numero de carros:\n");
     scanf("%d", &n);
-    Carro carros[n];
+    Carro carros[ n ];
     carros[n] = CadastroCarros(n, carros[]);
     float precoMax;
     printf("Digite o preco maximo:\n");
